@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hack To Feed – Connecting Food Donors to People in Need</title>
+  <meta name="description" content="Hack To Feed is a food donation NGO connecting donors, volunteers, and communities to fight hunger. Join us to reduce food waste and feed those in need." />
+  <meta name="keywords" content="food donation, NGO, hunger relief, volunteers, food waste, Hyderabad" />
+  <meta property="og:title" content="Hack To Feed – Turning Surplus Food into Smiles" />
+  <meta property="og:description" content="Join Hack To Feed to fight hunger by donating surplus food and volunteering." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🍽️</text></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">🍽️</div>
+    Hack<span>To</span>Feed
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/services.html">Services</a>
+    <a href="pages/activities.html">Activities</a>
+    <a href="pages/get-involved.html">Get Involved</a>
+    <a href="pages/transparency.html">Transparency</a>
+    <a href="pages/contact.html">Contact</a>
+  </div>
+  <div class="nav-cta">
+    <a href="pages/get-involved.html#donate" class="btn btn-primary btn-sm">Donate Now</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="pages/about.html">About Us</a>
+  <a href="pages/services.html">Services</a>
+  <a href="pages/activities.html">Activities</a>
+  <a href="pages/get-involved.html">Get Involved</a>
+  <a href="pages/transparency.html">Transparency</a>
+  <a href="pages/contact.html">Contact</a>
+  <a href="pages/get-involved.html#donate" class="btn btn-primary">Donate Now</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">🌍 Fighting Hunger Since 2019</div>
+      <h1 class="hero-title">
+        Turning <span class="highlight">Surplus Food</span><br>into Smiles.
+      </h1>
+      <p class="hero-sub">Connecting donors, volunteers, and communities to eliminate food waste and fight hunger across India — one meal at a time.</p>
+      <div class="hero-buttons">
+        <a href="pages/get-involved.html#donate-food" class="btn btn-primary" id="cta-donate-food">🥘 Donate Food</a>
+        <a href="pages/get-involved.html#volunteer" class="btn btn-green" id="cta-volunteer">🙋 Become Volunteer</a>
+        <a href="pages/get-involved.html#request-help" class="btn btn-outline" id="cta-request">🤝 Request Food Help</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ===== IMPACT STATS ===== -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-icon">🍽️</span>
+        <span class="stat-number" data-target="150000" data-suffix="+" id="counter-meals">0</span>
+        <span class="stat-label">Meals Served</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🙋</span>
+        <span class="stat-number" data-target="1200" data-suffix="+" id="counter-volunteers">0</span>
+        <span class="stat-label">Active Volunteers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🏪</span>
+        <span class="stat-number" data-target="350" data-suffix="+" id="counter-partners">0</span>
+        <span class="stat-label">Partner Restaurants</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🏙️</span>
+        <span class="stat-number" data-target="18" data-suffix="+" id="counter-cities">0</span>
+        <span class="stat-label">Cities Served</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MISSION ===== -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+      <div class="fade-in-left">
+        <div class="badge">Our Mission</div>
+        <h2 class="section-title">We Believe No Food Should<br>Go to <span class="text-orange">Waste</span></h2>
+        <p style="margin-bottom:20px;">Every day, tonnes of perfectly good food goes to waste while millions go to bed hungry. Hack To Feed bridges this gap — working tirelessly to rescue surplus food and redirect it to communities that need it most.</p>
+        <p style="margin-bottom:32px;">We operate a local volunteer network that picks up food from restaurants, weddings, and corporate events, then distributes it to underserved communities across 18+ cities.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="pages/about.html" class="btn btn-primary" id="learn-more-mission">Learn More</a>
+          <a href="pages/get-involved.html" class="btn btn-dark" id="join-us-mission">Join Us</a>
+        </div>
+      </div>
+      <div class="fade-in-right">
+        <div style="position:relative;">
+          <img src="assets/images/community_kitchen.png" alt="Community Kitchen" style="width:100%;border-radius:20px;box-shadow:0 16px 50px rgba(0,0,0,0.15);" />
+          <div style="position:absolute;bottom:-20px;left:-20px;background:white;border-radius:14px;padding:18px 24px;box-shadow:0 8px 30px rgba(0,0,0,0.12);display:flex;align-items:center;gap:14px;">
+            <div style="width:50px;height:50px;background:linear-gradient(135deg,#FF6B2B,#E55520);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;">🏆</div>
+            <div>
+              <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;color:#1A1A2E;">Award Winning</div>
+              <div style="font-size:0.82rem;color:#888;">Best NGO – Hunger Relief 2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="badge">What We Do</div>
+      <h2 class="section-title">Our Core <span class="text-orange">Services</span></h2>
+      <p class="section-sub">From farm to fork, we manage every step of food rescue and redistribution.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon">🚗</div>
+        <h3>Food Donation Pickup</h3>
+        <p>We collect surplus food from restaurants, caterers, weddings, and events within hours of your call — ensuring fresh, safe food reaches those in need.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon green">🙋</div>
+        <h3>Volunteer Network</h3>
+        <p>Our 1,200+ trained local volunteers act as the backbone of food distribution, reaching communities quickly and efficiently.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🍲</div>
+        <h3>Community Kitchens</h3>
+        <p>We operate community kitchens that cook and distribute freshly prepared meals daily to shelters, slums, and underserved localities.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon green">🎉</div>
+        <h3>Event Food Recovery</h3>
+        <p>Partner with us for your weddings, conferences, and corporate events to ensure leftover food is rescued and redistributed — not wasted.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🏢</div>
+        <h3>Corporate CSR Programs</h3>
+        <p>We help companies fulfill their CSR obligations through structured, impactful hunger-relief partnerships with measurable outcomes.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon green">📊</div>
+        <h3>Impact Reporting</h3>
+        <p>Transparent real-time tracking of every meal served, every volunteer deployment, and every rupee spent — because trust is everything.</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:40px;">
+      <a href="pages/services.html" class="btn btn-primary" id="view-all-services">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RECENT ACTIVITIES ===== -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="badge">Latest Work</div>
+      <h2 class="section-title">Recent <span class="text-orange">Activities</span></h2>
+      <p class="section-sub">See what Hack To Feed has been up to this month.</p>
+    </div>
+    <div class="activities-grid">
+      <div class="activity-card fade-in">
+        <div class="activity-img">
+          <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?w=600&q=80" alt="Tech Park Food Drive" loading="lazy" />
+          <span class="activity-tag">Food Drive</span>
+        </div>
+        <div class="activity-body">
+          <div class="activity-date">📅 March 8, 2026</div>
+          <h3>Food Drive at Hyderabad Tech Park</h3>
+          <p>Collected 800 kg of surplus food from 12 tech companies in HITEC City. Distributed 2,400 meals across 6 nearby communities.</p>
+          <a href="pages/activities.html" class="read-more">Read More →</a>
+        </div>
+      </div>
+      <div class="activity-card fade-in">
+        <div class="activity-img">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="Gachibowli Meals" loading="lazy" />
+          <span class="activity-tag">Distribution</span>
+        </div>
+        <div class="activity-body">
+          <div class="activity-date">📅 March 5, 2026</div>
+          <h3>2,000 Meals Distributed in Gachibowli</h3>
+          <p>Our volunteer team served 2,000 hot meals to daily wage workers and underprivileged families near Gachibowli stadium.</p>
+          <a href="pages/activities.html" class="read-more">Read More →</a>
+        </div>
+      </div>
+      <div class="activity-card fade-in">
+        <div class="activity-img">
+          <img src="https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=80" alt="Wedding Food Rescue" loading="lazy" />
+          <span class="activity-tag">Food Rescue</span>
+        </div>
+        <div class="activity-body">
+          <div class="activity-date">📅 March 2, 2026</div>
+          <h3>Wedding Surplus Food Rescued</h3>
+          <p>Partnered with a Jubilee Hills wedding venue to rescue 500+ kg of surplus food, which was repacked and distributed within 3 hours.</p>
+          <a href="pages/activities.html" class="read-more">Read More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:40px;">
+      <a href="pages/activities.html" class="btn btn-dark" id="view-all-activities">View All Activities</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="badge">Real Stories</div>
+      <h2 class="section-title">What People <span class="text-orange">Say</span></h2>
+      <p class="section-sub">Voices from our volunteers, partners, and the communities we serve.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <div class="quote-icon">"</div>
+        <p class="testimonial-text">Being part of Hack To Feed completely changed how I see food waste. I used to throw away leftovers without a second thought. Now I know every meal can save a life.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar-placeholder">P</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="author-name">Priya Sharma</div>
+            <div class="author-role">Volunteer, Hyderabad</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="quote-icon">"</div>
+        <p class="testimonial-text">We donate our surplus food daily and it reaches people in need the same evening. The Hack To Feed team is incredibly professional and trustworthy. Proud to be a partner.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar-placeholder">R</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="author-name">Ramesh Gupta</div>
+            <div class="author-role">Restaurant Owner, Banjara Hills</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="quote-icon">"</div>
+        <p class="testimonial-text">During the lockdown, when we had no income, Hack To Feed's daily food packets kept our family alive. I will forever be grateful to every person behind this organization.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar-placeholder">F</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="author-name">Fatima Begum</div>
+            <div class="author-role">Beneficiary, Nampally</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="fade-in">
+      <div class="badge" style="background:rgba(255,107,43,0.25);color:#FF8C5A;">Make an Impact</div>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:16px;">Your One Meal Can Feed<br>Someone <span style="color:#FF8C5A;">Today.</span></h2>
+      <p>Join 1,200+ volunteers and 350+ restaurant partners who are fighting hunger every single day across India.</p>
+      <div class="cta-buttons">
+        <a href="pages/get-involved.html#donate" class="btn btn-primary" id="cta-donate-now" style="font-size:1.05rem;padding:16px 40px;">💛 Donate Now</a>
+        <a href="pages/get-involved.html#volunteer" class="btn btn-green" id="cta-join-volunteer" style="font-size:1.05rem;padding:16px 40px;">🙋 Join As Volunteer</a>
+        <a href="pages/contact.html" class="btn btn-outline" id="cta-contact" style="font-size:1.05rem;padding:16px 40px;">📞 Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">🍽️</div>
+          Hack<span>To</span>Feed
+        </a>
+        <p>Reducing hunger by connecting food donors, volunteers, and NGOs to distribute surplus food to those who need it most.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" title="Facebook" id="footer-fb">f</a>
+          <a href="#" class="social-link" title="Twitter" id="footer-tw">𝕏</a>
+          <a href="#" class="social-link" title="Instagram" id="footer-ig">📸</a>
+          <a href="#" class="social-link" title="LinkedIn" id="footer-li">in</a>
+          <a href="#" class="social-link" title="YouTube" id="footer-yt">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/activities.html">Activities</a></li>
+          <li><a href="pages/transparency.html">Transparency</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="pages/get-involved.html#volunteer">Volunteer</a></li>
+          <li><a href="pages/get-involved.html#donate-food">Donate Food</a></li>
+          <li><a href="pages/get-involved.html#donate">Donate Money</a></li>
+          <li><a href="pages/get-involved.html#partner">Partner With Us</a></li>
+          <li><a href="pages/get-involved.html#request-help">Request Help</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <span class="icon">📍</span>
+          <span>Plot 42, Jubilee Hills, Hyderabad – 500033</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📞</span>
+          <span>+91 98765 43210</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">✉️</span>
+          <span>help@hacktofeed.org</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">⏰</span>
+          <span>Mon–Sun: 7AM – 10PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 <a href="index.html">Hack To Feed</a>. All rights reserved. NGO Reg. No. AP/2019/HTF/001</p>
+      <p>Made with ❤️ for a hunger-free India</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="backTop" style="position:fixed;bottom:80px;right:24px;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6B2B,#E55520);color:white;border:none;font-size:1.2rem;cursor:pointer;box-shadow:0 4px 16px rgba(255,107,43,0.4);opacity:0;transition:opacity 0.3s;z-index:900;" title="Back to top">↑</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities – Hack To Feed</title>
+  <meta name="description" content="See Hack To Feed's recent activities, past events, impact gallery, and monthly reports." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🍽️</text></svg>" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .tab-nav { display:flex; gap:8px; margin-bottom:36px; flex-wrap:wrap; }
+    .tab-btn { padding:10px 24px; border-radius:50px; border:2px solid rgba(0,0,0,0.1); background:transparent; font-family:'Poppins',sans-serif; font-weight:600; font-size:0.88rem; cursor:pointer; transition:all 0.3s; color:#555; }
+    .tab-btn.active { background:linear-gradient(135deg,#FF6B2B,#E55520); color:white; border-color:transparent; box-shadow:0 4px 16px rgba(255,107,43,0.3); }
+    .tab-panel { display:none; }
+    .tab-panel.active { display:block; }
+    .report-card { background:white; border-radius:14px; padding:24px; box-shadow:0 4px 20px rgba(0,0,0,0.08); border:1px solid rgba(0,0,0,0.05); margin-bottom:16px; display:flex; align-items:center; gap:20px; }
+    .report-icon { width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#FF6B2B,#E55520);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0; }
+    .report-card h4 { color:#1A1A2E; margin-bottom:4px; }
+    .report-card p { font-size:0.83rem; color:#888; }
+    .report-card .btn { margin-left:auto; flex-shrink:0; }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="../index.html" class="nav-logo"><div class="logo-icon">🍽️</div>Hack<span>To</span>Feed</a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    <a href="activities.html" class="active">Activities</a><a href="get-involved.html">Get Involved</a>
+    <a href="transparency.html">Transparency</a><a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-cta"><a href="get-involved.html#donate" class="btn btn-primary btn-sm">Donate Now</a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+  <a href="activities.html">Activities</a><a href="get-involved.html">Get Involved</a>
+  <a href="transparency.html">Transparency</a><a href="contact.html">Contact</a>
+  <a href="get-involved.html#donate" class="btn btn-primary">Donate Now</a>
+</div>
+
+<section class="page-banner">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a><span>/</span><span>Activities</span></div>
+    <div class="badge">On The Ground</div>
+    <h1>Our <span style="color:#FF8C5A;">Activities</span></h1>
+    <p>Recent events, past drives, photo galleries, and monthly impact reports.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="tab-nav">
+      <button class="tab-btn active" data-group="activities" data-tab="recent" id="tab-recent">Recent Activities</button>
+      <button class="tab-btn" data-group="activities" data-tab="past" id="tab-past">Past Events</button>
+      <button class="tab-btn" data-group="activities" data-tab="gallery" id="tab-gallery">Impact Gallery</button>
+      <button class="tab-btn" data-group="activities" data-tab="reports" id="tab-reports">Monthly Reports</button>
+    </div>
+
+    <!-- Recent Activities -->
+    <div class="tab-panel active" data-group="activities" data-tab="recent">
+      <div class="activities-grid">
+        <div class="activity-card fade-in">
+          <div class="activity-img">
+            <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?w=600&q=80" alt="Tech Park" loading="lazy" />
+            <span class="activity-tag">Food Drive</span>
+          </div>
+          <div class="activity-body">
+            <div class="activity-date">📅 March 8, 2026</div>
+            <h3>Food Drive at Hyderabad Tech Park</h3>
+            <p>Collected 800 kg of surplus food from 12 tech companies in HITEC City — 2,400 meals distributed across 6 communities.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="activity-card fade-in">
+          <div class="activity-img">
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="Gachibowli" loading="lazy" />
+            <span class="activity-tag">Distribution</span>
+          </div>
+          <div class="activity-body">
+            <div class="activity-date">📅 March 5, 2026</div>
+            <h3>2,000 Meals Distributed in Gachibowli</h3>
+            <p>Served 2,000 hot meals to daily wage workers and families near Gachibowli. Deployed 45 volunteers for this drive.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="activity-card fade-in">
+          <div class="activity-img">
+            <img src="https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=80" alt="Wedding Rescue" loading="lazy" />
+            <span class="activity-tag">Food Rescue</span>
+          </div>
+          <div class="activity-body">
+            <div class="activity-date">📅 March 2, 2026</div>
+            <h3>Wedding Surplus Food Rescued</h3>
+            <p>Rescued 500+ kg from a Jubilee Hills wedding. Repacked and distributed within 3 hours to 4 shelters.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="activity-card fade-in">
+          <div class="activity-img">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Community Kitchen" loading="lazy" />
+            <span class="activity-tag">Kitchen Event</span>
+          </div>
+          <div class="activity-body">
+            <div class="activity-date">📅 Feb 28, 2026</div>
+            <h3>Community Kitchen Event – Secunderabad</h3>
+            <p>Cooked and served 1,200 fresh meals from our new Secunderabad kitchen to shelters and street families.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="activity-card fade-in">
+          <div class="activity-img">
+            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&q=80" alt="Corporate Drive" loading="lazy" />
+            <span class="activity-tag">CSR Drive</span>
+          </div>
+          <div class="activity-body">
+            <div class="activity-date">📅 Feb 22, 2026</div>
+            <h3>TechMahindra CSR Food Drive</h3>
+            <p>Partnered with TechMahindra's CSR team for a mega food drive. 200 employees volunteered; 5,000 meals served.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="activity-card fade-in">
+          <div class="activity-img">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="School Nutrition" loading="lazy" />
+            <span class="activity-tag">School Program</span>
+          </div>
+          <div class="activity-body">
+            <div class="activity-date">📅 Feb 15, 2026</div>
+            <h3>School Nutrition Program – Nampally</h3>
+            <p>Launched mid-day meal supplement program for 3 government schools. 800 children receive daily nutritious snacks.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Past Events -->
+    <div class="tab-panel" data-group="activities" data-tab="past">
+      <div class="activities-grid">
+        <div class="activity-card fade-in">
+          <div class="activity-img">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80" alt="Flood Relief" loading="lazy" />
+            <span class="activity-tag">Relief Drive</span>
+          </div>
+          <div class="activity-body">
+            <div class="activity-date">📅 Oct 2025</div>
+            <h3>Flood Relief – Food Distribution</h3>
+            <p>Emergency response to floods in Warangal district. Distributed 15,000 meals over 10 days to 5,000 displaced families.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="activity-card fade-in">
+          <div class="activity-img">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Slum Feeding" loading="lazy" />
+            <span class="activity-tag">Community</span>
+          </div>
+          <div class="activity-body">
+            <div class="activity-date">📅 Aug 2025</div>
+            <h3>Slum Community Feeding Drive</h3>
+            <p>6-month feeding program in Basti cluster near Secunderabad — 200 families received consistent daily meals.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+        <div class="activity-card fade-in">
+          <div class="activity-img">
+            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&q=80" alt="Ramadan Drive" loading="lazy" />
+            <span class="activity-tag">Festive Drive</span>
+          </div>
+          <div class="activity-body">
+            <div class="activity-date">📅 Apr 2025</div>
+            <h3>Ramadan Iftar Drive – 3,000 Meals</h3>
+            <p>Organized community Iftar for 3,000 people across Old City with support from 80 restaurant partners.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="tab-panel" data-group="activities" data-tab="gallery">
+      <div class="gallery-grid">
+        <div class="gallery-item wide">
+          <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?w=800&q=80" alt="Tech Park Food Drive" loading="lazy" />
+          <div class="gallery-overlay"><p>Tech Park Food Drive – March 2026</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="Meals Distribution" loading="lazy" />
+          <div class="gallery-overlay"><p>Gachibowli Distribution</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=80" alt="Wedding Rescue" loading="lazy" />
+          <div class="gallery-overlay"><p>Wedding Food Rescue</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Community Kitchen" loading="lazy" />
+          <div class="gallery-overlay"><p>Community Kitchen – Secunderabad</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/images/community_kitchen.png" alt="Kitchen" loading="lazy" />
+          <div class="gallery-overlay"><p>Active Kitchen Operations</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Nutritious Meals" loading="lazy" />
+          <div class="gallery-overlay"><p>School Nutrition Program</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/images/hero_volunteers.png" alt="Volunteers" loading="lazy" />
+          <div class="gallery-overlay"><p>Our Volunteer Army</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=600&q=80" alt="Corporate Drive" loading="lazy" />
+          <div class="gallery-overlay"><p>TechMahindra CSR Drive</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Monthly Reports -->
+    <div class="tab-panel" data-group="activities" data-tab="reports">
+      <div style="max-width:720px;">
+        <div class="report-card"><div class="report-icon">📄</div>
+          <div><h4>March 2026 – Impact Report</h4><p>Meals: 18,400 | Volunteers: 340 | Cities: 18 | New Partners: 12</p></div>
+          <a href="#" class="btn btn-primary btn-sm" id="report-mar26">Download</a>
+        </div>
+        <div class="report-card"><div class="report-icon">📄</div>
+          <div><h4>February 2026 – Impact Report</h4><p>Meals: 16,200 | Volunteers: 310 | Cities: 17 | Events: 28</p></div>
+          <a href="#" class="btn btn-primary btn-sm" id="report-feb26">Download</a>
+        </div>
+        <div class="report-card"><div class="report-icon">📄</div>
+          <div><h4>January 2026 – Impact Report</h4><p>Meals: 14,800 | Volunteers: 290 | Cities: 16 | Kg Rescued: 4,200</p></div>
+          <a href="#" class="btn btn-primary btn-sm" id="report-jan26">Download</a>
+        </div>
+        <div class="report-card"><div class="report-icon">📊</div>
+          <div><h4>Q4 2025 – Quarterly Summary</h4><p>Meals: 52,000 | Volunteers: 850 | Cities: 15 | Partners: 280</p></div>
+          <a href="#" class="btn btn-primary btn-sm" id="report-q4-25">Download</a>
+        </div>
+        <div class="report-card"><div class="report-icon">📊</div>
+          <div><h4>Annual Report 2025</h4><p>Full year impact: 1,10,000 meals | 45+ events | 12 cities covered</p></div>
+          <a href="#" class="btn btn-green btn-sm" id="report-annual25">Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="badge" style="background:rgba(255,107,43,0.25);color:#FF8C5A;">Join the Action</div>
+    <h2>Want to Be Part of <span style="color:#FF8C5A;">Our Next Drive?</span></h2>
+    <p>Register as a volunteer or donate food today to help us do even more.</p>
+    <div class="cta-buttons">
+      <a href="get-involved.html#volunteer" class="btn btn-primary" id="act-cta-vol">🙋 Volunteer</a>
+      <a href="get-involved.html#donate-food" class="btn btn-green" id="act-cta-donate">🥘 Donate Food</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand"><a href="../index.html" class="nav-logo"><div class="logo-icon">🍽️</div>Hack<span>To</span>Feed</a>
+    <p>Reducing hunger by connecting food donors, volunteers, and NGOs.</p>
+    <div class="footer-social"><a href="#" class="social-link">f</a><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">📸</a><a href="#" class="social-link">in</a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="activities.html">Activities</a></li></ul></div>
+    <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="get-involved.html#volunteer">Volunteer</a></li><li><a href="get-involved.html#donate-food">Donate Food</a></li><li><a href="get-involved.html#partner">Partner</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4>
+      <div class="footer-contact-item"><span class="icon">📞</span><span>+91 98765 43210</span></div>
+      <div class="footer-contact-item"><span class="icon">✉️</span><span>help@hacktofeed.org</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 <a href="../index.html">Hack To Feed</a>. All rights reserved.</p><p>Made with ❤️ for a hunger-free India</p></div>
+</div></footer>
+<button id="backTop" style="position:fixed;bottom:80px;right:24px;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6B2B,#E55520);color:white;border:none;font-size:1.2rem;cursor:pointer;box-shadow:0 4px 16px rgba(255,107,43,0.4);opacity:0;transition:opacity 0.3s;z-index:900;">↑</button>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

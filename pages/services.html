@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Hack To Feed</title>
+  <meta name="description" content="Explore Hack To Feed's food rescue, volunteer, community kitchen, event recovery, and corporate CSR services." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🍽️</text></svg>" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .service-detail { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; margin-bottom:80px; }
+    .service-detail:nth-child(even) .service-detail-img { order:-1; }
+    .service-detail-img { border-radius:20px; overflow:hidden; box-shadow:0 16px 50px rgba(0,0,0,0.12); height:340px; }
+    .service-detail-img img { width:100%; height:100%; object-fit:cover; }
+    .service-detail-img .placeholder { width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:5rem; }
+    .feature-list { list-style:none; margin:20px 0; }
+    .feature-list li { display:flex; gap:10px; margin-bottom:12px; align-items:flex-start; font-size:0.93rem; color:#555; }
+    .feature-list li::before { content:'✅'; flex-shrink:0; }
+    @media(max-width:768px){ .service-detail{grid-template-columns:1fr;} .service-detail:nth-child(even) .service-detail-img{order:0;} }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="../index.html" class="nav-logo"><div class="logo-icon">🍽️</div>Hack<span>To</span>Feed</a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a><a href="about.html">About</a><a href="services.html" class="active">Services</a>
+    <a href="activities.html">Activities</a><a href="get-involved.html">Get Involved</a>
+    <a href="transparency.html">Transparency</a><a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-cta"><a href="get-involved.html#donate" class="btn btn-primary btn-sm">Donate Now</a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+  <a href="activities.html">Activities</a><a href="get-involved.html">Get Involved</a>
+  <a href="transparency.html">Transparency</a><a href="contact.html">Contact</a>
+  <a href="get-involved.html#donate" class="btn btn-primary">Donate Now</a>
+</div>
+
+<section class="page-banner">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a><span>/</span><span>Services</span></div>
+    <div class="badge">What We Offer</div>
+    <h1>Our <span style="color:#FF8C5A;">Services</span></h1>
+    <p>Comprehensive food rescue and hunger relief programs across 18+ cities.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!-- Service 1: Food Donation Pickup -->
+    <div class="service-detail">
+      <div class="fade-in-left">
+        <div class="badge">Service 01</div>
+        <h2 class="section-title">Food Donation <span class="text-orange">Pickup</span></h2>
+        <p style="margin-bottom:16px;">We collect surplus food from restaurants, hotels, caterers, weddings, canteens, and corporate events. Our trained volunteers arrive within 2 hours of your call.</p>
+        <ul class="feature-list">
+          <li>Available 7 days a week, 7AM – 10PM</li>
+          <li>Food safety & hygiene checks at pickup</li>
+          <li>GPS-tracked vehicles for transparency</li>
+          <li>Digital receipt provided to donors</li>
+          <li>Tax exemption certificate (80G) issued</li>
+        </ul>
+        <a href="get-involved.html#donate-food" class="btn btn-primary" id="svc1-cta">Schedule a Pickup</a>
+      </div>
+      <div class="service-detail-img fade-in-right">
+        <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?w=700&q=80" alt="Food Pickup" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Service 2: Volunteer Network -->
+    <div class="service-detail">
+      <div class="service-detail-img fade-in-left">
+        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=700&q=80" alt="Volunteer Network" loading="lazy" />
+      </div>
+      <div class="fade-in-right">
+        <div class="badge">Service 02</div>
+        <h2 class="section-title">Volunteer <span class="text-orange">Network</span></h2>
+        <p style="margin-bottom:16px;">Our 1,200+ trained local volunteers are the heart of our operations. From food pickup to distribution, our volunteers ensure meals reach communities quickly.</p>
+        <ul class="feature-list">
+          <li>City-wise volunteer coordinator teams</li>
+          <li>Training on food safety and handling</li>
+          <li>Flexible timing — weekend or weekday</li>
+          <li>Volunteer recognition and certification</li>
+          <li>Community and team bonding events</li>
+        </ul>
+        <a href="get-involved.html#volunteer" class="btn btn-primary" id="svc2-cta">Join as Volunteer</a>
+      </div>
+    </div>
+
+    <!-- Service 3: Community Kitchens -->
+    <div class="service-detail">
+      <div class="fade-in-left">
+        <div class="badge">Service 03</div>
+        <h2 class="section-title">Community <span class="text-orange">Kitchens</span></h2>
+        <p style="margin-bottom:16px;">We operate 8 community kitchens across Telangana and AP that cook and distribute fresh, nutritious meals daily to shelters, slums, and underserved localities.</p>
+        <ul class="feature-list">
+          <li>FSSAI-certified kitchen operations</li>
+          <li>500–1,000 fresh meals per kitchen daily</li>
+          <li>Balanced nutrition with local recipes</li>
+          <li>Priority for children, elderly, and pregnant women</li>
+          <li>Monthly nutrition outcome tracking</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" id="svc3-cta">Partner a Kitchen</a>
+      </div>
+      <div class="service-detail-img fade-in-right">
+        <img src="../assets/images/community_kitchen.png" alt="Community Kitchen" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Service 4: Event Food Recovery -->
+    <div class="service-detail">
+      <div class="service-detail-img fade-in-left">
+        <img src="https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=700&q=80" alt="Event Food Recovery" loading="lazy" />
+      </div>
+      <div class="fade-in-right">
+        <div class="badge">Service 04</div>
+        <h2 class="section-title">Event Food <span class="text-orange">Recovery</span></h2>
+        <p style="margin-bottom:16px;">Register your wedding, conference, or corporate dinner with us and we'll ensure no food is wasted. Our team arrives before the event ends to pack and redistribute.</p>
+        <ul class="feature-list">
+          <li>Pre-event registration & planning</li>
+          <li>On-site packing team provided</li>
+          <li>Redistribution within 3 hours of event</li>
+          <li>Impact certificate for your event</li>
+          <li>Social media feature for your event</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" id="svc4-cta">Register Event</a>
+      </div>
+    </div>
+
+    <!-- Service 5: Corporate CSR -->
+    <div class="service-detail">
+      <div class="fade-in-left">
+        <div class="badge">Service 05</div>
+        <h2 class="section-title">Corporate CSR <span class="text-orange">Programs</span></h2>
+        <p style="margin-bottom:16px;">Partner with Hack To Feed for your company's CSR initiatives. We offer structured, impactful hunger-relief programs with full impact reporting and employee engagement.</p>
+        <ul class="feature-list">
+          <li>Customized CSR program design</li>
+          <li>Employee volunteer engagement events</li>
+          <li>Quarterly impact reports with data</li>
+          <li>Brand visibility on all distribution drives</li>
+          <li>80G tax-exempt receipts for donations</li>
+        </ul>
+        <a href="get-involved.html#partner" class="btn btn-primary" id="svc5-cta">Become CSR Partner</a>
+      </div>
+      <div class="service-detail-img fade-in-right">
+        <div class="placeholder" style="background:linear-gradient(135deg,#e8f5e9,#fff3e0);">🏢</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="badge">Process</div>
+      <h2 class="section-title">How It <span class="text-orange">Works</span></h2>
+      <p class="section-sub">Our streamlined process ensures food is rescued and redistributed in under 3 hours.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:20px;position:relative;">
+      <div style="position:absolute;top:35px;left:12.5%;right:12.5%;height:2px;background:linear-gradient(90deg,#FF6B2B,#2ECC71);z-index:0;"></div>
+      <div class="fade-in" style="text-align:center;position:relative;z-index:1;">
+        <div style="width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#FF6B2B,#E55520);display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin:0 auto 16px;box-shadow:0 8px 24px rgba(255,107,43,0.35);">📞</div>
+        <h3 style="font-size:0.95rem;margin-bottom:8px;">1. You Call</h3>
+        <p style="font-size:0.83rem;">Notify us about surplus food via app, call, or WhatsApp.</p>
+      </div>
+      <div class="fade-in" style="text-align:center;position:relative;z-index:1;">
+        <div style="width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#FF8C5A,#FF6B2B);display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin:0 auto 16px;box-shadow:0 8px 24px rgba(255,107,43,0.35);">🚗</div>
+        <h3 style="font-size:0.95rem;margin-bottom:8px;">2. We Dispatch</h3>
+        <p style="font-size:0.83rem;">Nearest volunteer picks up within 2 hours, food-safety checked.</p>
+      </div>
+      <div class="fade-in" style="text-align:center;position:relative;z-index:1;">
+        <div style="width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#2ECC71,#27AE60);display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin:0 auto 16px;box-shadow:0 8px 24px rgba(46,204,113,0.35);">📦</div>
+        <h3 style="font-size:0.95rem;margin-bottom:8px;">3. We Pack</h3>
+        <p style="font-size:0.83rem;">Food is sorted, packed hygienically, and dispatched to communities.</p>
+      </div>
+      <div class="fade-in" style="text-align:center;position:relative;z-index:1;">
+        <div style="width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#27AE60,#1A6B3A);display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin:0 auto 16px;box-shadow:0 8px 24px rgba(46,204,113,0.35);">❤️</div>
+        <h3 style="font-size:0.95rem;margin-bottom:8px;">4. Served</h3>
+        <p style="font-size:0.83rem;">Food reaches needy communities. You receive an impact report.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="badge" style="background:rgba(255,107,43,0.25);color:#FF8C5A;">Get Started</div>
+    <h2>Ready to <span style="color:#FF8C5A;">Donate Food</span> or Partner?</h2>
+    <p>Every kilogram of surplus food you donate can feed 3 people in need.</p>
+    <div class="cta-buttons">
+      <a href="get-involved.html#donate-food" class="btn btn-primary" id="svc-cta-donate">🥘 Donate Food</a>
+      <a href="get-involved.html#partner" class="btn btn-green" id="svc-cta-partner">🤝 Partner With Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand"><a href="../index.html" class="nav-logo"><div class="logo-icon">🍽️</div>Hack<span>To</span>Feed</a>
+    <p>Reducing hunger by connecting food donors, volunteers, and NGOs.</p>
+    <div class="footer-social"><a href="#" class="social-link">f</a><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">📸</a><a href="#" class="social-link">in</a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="activities.html">Activities</a></li></ul></div>
+    <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="get-involved.html#volunteer">Volunteer</a></li><li><a href="get-involved.html#donate-food">Donate Food</a></li><li><a href="get-involved.html#partner">Partner</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4>
+      <div class="footer-contact-item"><span class="icon">📞</span><span>+91 98765 43210</span></div>
+      <div class="footer-contact-item"><span class="icon">✉️</span><span>help@hacktofeed.org</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 <a href="../index.html">Hack To Feed</a>. All rights reserved.</p><p>Made with ❤️ for a hunger-free India</p></div>
+</div></footer>
+<button id="backTop" style="position:fixed;bottom:80px;right:24px;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6B2B,#E55520);color:white;border:none;font-size:1.2rem;cursor:pointer;box-shadow:0 4px 16px rgba(255,107,43,0.4);opacity:0;transition:opacity 0.3s;z-index:900;">↑</button>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

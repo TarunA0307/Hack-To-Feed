@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transparency – Hack To Feed</title>
+  <meta name="description" content="Hack To Feed's impact dashboard, financial reports, and donor recognition – full transparency in our operations." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🍽️</text></svg>" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    canvas { max-width:100%; border-radius:12px; }
+    .chart-card { background:white; border-radius:16px; padding:28px; box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+    .chart-card h3 { margin-bottom:20px; font-size:1.1rem; color:#1A1A2E; }
+    .donor-table { width:100%; border-collapse:collapse; }
+    .donor-table th { background:linear-gradient(135deg,#FF6B2B,#E55520); color:white; padding:14px 18px; text-align:left; font-size:0.88rem; font-weight:600; }
+    .donor-table th:first-child { border-radius:10px 0 0 0; }
+    .donor-table th:last-child { border-radius:0 10px 0 0; }
+    .donor-table td { padding:13px 18px; border-bottom:1px solid rgba(0,0,0,0.06); font-size:0.88rem; color:#555; }
+    .donor-table tr:hover td { background:#fff9f5; }
+    .badge-gold { background:#FFD166; color:#8B5E00; padding:3px 10px; border-radius:50px; font-size:0.75rem; font-weight:700; }
+    .badge-silver { background:#E0E0E0; color:#555; padding:3px 10px; border-radius:50px; font-size:0.75rem; font-weight:700; }
+    .badge-bronze { background:#E8C4A0; color:#6B3A00; padding:3px 10px; border-radius:50px; font-size:0.75rem; font-weight:700; }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="../index.html" class="nav-logo"><div class="logo-icon">🍽️</div>Hack<span>To</span>Feed</a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    <a href="activities.html">Activities</a><a href="get-involved.html">Get Involved</a>
+    <a href="transparency.html" class="active">Transparency</a><a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-cta"><a href="get-involved.html#donate" class="btn btn-primary btn-sm">Donate Now</a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+  <a href="activities.html">Activities</a><a href="get-involved.html">Get Involved</a>
+  <a href="transparency.html">Transparency</a><a href="contact.html">Contact</a>
+  <a href="get-involved.html#donate" class="btn btn-primary">Donate Now</a>
+</div>
+
+<section class="page-banner">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a><span>/</span><span>Transparency</span></div>
+    <div class="badge">Open Books</div>
+    <h1>Our <span style="color:#FF8C5A;">Transparency</span></h1>
+    <p>Every rupee, every meal, every volunteer — accounted for. Because your trust is our mission.</p>
+  </div>
+</section>
+
+<!-- IMPACT DASHBOARD -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="badge">Live Impact</div>
+      <h2 class="section-title">Impact <span class="text-orange">Dashboard</span></h2>
+      <p class="section-sub">Real-time overview of Hack To Feed's cumulative impact since 2019.</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="dashboard-card fade-in">
+        <h4>Total Meals Served</h4>
+        <div class="big-num" data-target="150000" data-suffix="+" style="font-size:2rem;">0</div>
+        <div class="progress-bar-wrap">
+          <div class="progress-label"><span>Progress to 200K goal</span><span>75%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-width="75%" style="width:0;"></div></div>
+        </div>
+      </div>
+      <div class="dashboard-card green fade-in">
+        <h4>Active Volunteers</h4>
+        <div class="big-num" data-target="1200" data-suffix="+" style="font-size:2rem;">0</div>
+        <div class="progress-bar-wrap">
+          <div class="progress-label"><span>Progress to 2K goal</span><span>60%</span></div>
+          <div class="progress-bar"><div class="progress-fill green" data-width="60%" style="width:0;"></div></div>
+        </div>
+      </div>
+      <div class="dashboard-card blue fade-in">
+        <h4>Food Rescued (kg)</h4>
+        <div class="big-num" data-target="45000" data-suffix="kg" style="font-size:2rem;">0</div>
+        <div class="progress-bar-wrap">
+          <div class="progress-label"><span>Monthly target</span><span>82%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-width="82%" style="width:0;background:linear-gradient(90deg,#3498DB,#5DADE2);"></div></div>
+        </div>
+      </div>
+      <div class="dashboard-card fade-in">
+        <h4>Partner Restaurants</h4>
+        <div class="big-num" data-target="350" data-suffix="+" style="font-size:2rem;">0</div>
+        <div class="progress-bar-wrap">
+          <div class="progress-label"><span>Progress to 500 goal</span><span>70%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-width="70%" style="width:0;"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHARTS -->
+    <div style="display:grid;grid-template-columns:1.6fr 1fr;gap:28px;margin-top:28px;">
+      <div class="chart-card fade-in">
+        <h3>📈 Monthly Meals Served (2025–2026)</h3>
+        <canvas id="mealsChart" width="560" height="260"></canvas>
+      </div>
+      <div class="chart-card fade-in">
+        <h3>🥧 Donation Sources</h3>
+        <canvas id="donorChart" width="280" height="280"></canvas>
+      </div>
+    </div>
+    <div style="margin-top:28px;">
+      <div class="chart-card fade-in">
+        <h3>🙋 Volunteers by City</h3>
+        <canvas id="volunteerChart" width="800" height="240"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINANCIAL REPORTS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="badge">Financial Reports</div>
+      <h2 class="section-title">Where Your Money <span class="text-orange">Goes</span></h2>
+      <p class="section-sub">We are committed to maximum transparency in fund utilization.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;">
+      <div class="fade-in-left">
+        <div style="background:white;border-radius:16px;padding:32px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+          <h3 style="margin-bottom:20px;">Fund Utilization 2025</h3>
+          <div style="display:flex;flex-direction:column;gap:18px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:0.9rem;"><span>🍽️ Food Operations & Distribution</span><strong>68%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="68%" style="width:0;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:0.9rem;"><span>🙋 Volunteer Programs & Training</span><strong>15%</strong></div>
+              <div class="progress-bar"><div class="progress-fill green" data-width="15%" style="width:0;"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:0.9rem;"><span>📱 Technology & Infrastructure</span><strong>9%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="9%" style="width:0;background:linear-gradient(90deg,#3498DB,#5DADE2);"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:0.9rem;"><span>📋 Administration & Compliance</span><strong>5%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="5%" style="width:0;background:linear-gradient(90deg,#9B59B6,#8E44AD);"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:0.9rem;"><span>📣 Awareness & Outreach</span><strong>3%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="3%" style="width:0;background:linear-gradient(90deg,#F39C12,#D68910);"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in-right">
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div class="dashboard-card">
+            <h4>Total Funds Received (2025)</h4>
+            <div class="big-num" style="font-size:1.8rem;color:#FF6B2B;">₹48.6L</div>
+            <p style="font-size:0.8rem;margin-top:6px;">From individual donors, corporate CSR, grants &amp; events</p>
+          </div>
+          <div class="dashboard-card green">
+            <h4>Total Spent on Operations</h4>
+            <div class="big-num" style="font-size:1.8rem;color:#27AE60;">₹44.2L</div>
+            <p style="font-size:0.8rem;margin-top:6px;">91% of all funds directly support our programs</p>
+          </div>
+          <div style="background:white;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+            <h4 style="font-family:'Poppins',sans-serif;font-size:0.95rem;margin-bottom:14px;">📥 Download Reports</h4>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <a href="#" class="btn btn-primary btn-sm" style="justify-content:center;" id="dl-annual-2025">📄 Annual Report 2025</a>
+              <a href="#" class="btn btn-dark btn-sm" style="justify-content:center;" id="dl-audit-2025">🔍 Audit Report 2025</a>
+              <a href="#" class="btn btn-dark btn-sm" style="justify-content:center;" id="dl-80g">📜 80G Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONOR RECOGNITION -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in">
+      <div class="badge">Recognition</div>
+      <h2 class="section-title">Our Generous <span class="text-orange">Donors</span></h2>
+      <p class="section-sub">We are deeply grateful to everyone who has contributed to our mission.</p>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="donor-table fade-in">
+        <thead>
+          <tr><th>#</th><th>Donor</th><th>Type</th><th>Contribution</th><th>City</th><th>Recognition</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>TechMahindra Ltd.</td><td>Corporate</td><td>₹8,00,000</td><td>Hyderabad</td><td><span class="badge-gold">🏆 Gold</span></td></tr>
+          <tr><td>2</td><td>Ramesh & Family Trust</td><td>Individual</td><td>₹5,00,000</td><td>Secunderabad</td><td><span class="badge-gold">🏆 Gold</span></td></tr>
+          <tr><td>3</td><td>HDFC Bank CSR</td><td>Corporate</td><td>₹4,50,000</td><td>Mumbai</td><td><span class="badge-silver">🥈 Silver</span></td></tr>
+          <tr><td>4</td><td>Grand Hyatt Hotels</td><td>Hotel Chain</td><td>₹3,20,000</td><td>Hyderabad</td><td><span class="badge-silver">🥈 Silver</span></td></tr>
+          <tr><td>5</td><td>Dr. Ananya Krishnan</td><td>Individual</td><td>₹2,00,000</td><td>Bangalore</td><td><span class="badge-silver">🥈 Silver</span></td></tr>
+          <tr><td>6</td><td>GreenEarth Foundation</td><td>NGO</td><td>₹1,50,000</td><td>Delhi</td><td><span class="badge-bronze">🥉 Bronze</span></td></tr>
+          <tr><td>7</td><td>Pizza Valley (25 outlets)</td><td>Restaurant</td><td>12,800 kg food</td><td>Hyderabad</td><td><span class="badge-bronze">🥉 Bronze</span></td></tr>
+          <tr><td>8</td><td>1,150+ Anonymous Donors</td><td>Individual</td><td>₹24,40,000</td><td>Pan India</td><td>🌟 Community Heroes</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.82rem;color:#aaa;margin-top:16px;text-align:center;">* Donor information published with consent. Anonymous donations are aggregated.</p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="badge" style="background:rgba(255,107,43,0.25);color:#FF8C5A;">Join Our Donors</div>
+    <h2>Your Donation Creates <span style="color:#FF8C5A;">Measurable Impact</span></h2>
+    <p>100% transparent. Every rupee tracked. Every meal counted.</p>
+    <div class="cta-buttons">
+      <a href="get-involved.html#donate" class="btn btn-primary" id="trans-cta-donate">💛 Donate Now</a>
+      <a href="get-involved.html#partner" class="btn btn-green" id="trans-cta-partner">🤝 Partner</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand"><a href="../index.html" class="nav-logo"><div class="logo-icon">🍽️</div>Hack<span>To</span>Feed</a>
+    <p>Reducing hunger by connecting food donors, volunteers, and NGOs.</p>
+    <div class="footer-social"><a href="#" class="social-link">f</a><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">📸</a><a href="#" class="social-link">in</a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="activities.html">Activities</a></li></ul></div>
+    <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="get-involved.html#volunteer">Volunteer</a></li><li><a href="get-involved.html#donate-food">Donate Food</a></li><li><a href="get-involved.html#partner">Partner</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4>
+      <div class="footer-contact-item"><span class="icon">📞</span><span>+91 98765 43210</span></div>
+      <div class="footer-contact-item"><span class="icon">✉️</span><span>help@hacktofeed.org</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 <a href="../index.html">Hack To Feed</a>. All rights reserved.</p><p>Made with ❤️ for a hunger-free India</p></div>
+</div></footer>
+<button id="backTop" style="position:fixed;bottom:80px;right:24px;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#FF6B2B,#E55520);color:white;border:none;font-size:1.2rem;cursor:pointer;box-shadow:0 4px 16px rgba(255,107,43,0.4);opacity:0;transition:opacity 0.3s;z-index:900;">↑</button>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
